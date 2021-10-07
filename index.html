@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+
+    <title>Broadband</title>
+</head>
+<body class="body">
+
+    <div class="space">
+    <div class="maincontainer">
+    <div class="dividertop">
+    <h3 class="p-6 ml-2 bold24">2.4 GHz</h3>
+    <div>
+        <hr class="solid"> <!--divider-->
+    </div>
+
+    <!--1st block wifi textarea-->
+    <div class="grid grid-cols-2 p-6 pb-8 gap-2">  <!--main div of username and password-->
+        <div class="ml-2"> <!--div  username-->
+            <div class="">
+            <label for="Wifi name" class="bold16">Wi-Fi Name</label>
+            </div>
+            <input type="text" class="border mt-2 p-4 regular18">
+        </div> <!--end div of user name-->
+
+        <div class="ml-2"> <!--div  password-->
+            <div class="">
+            <label for="Wifi name" class="bold16">Wi-Fi Password</label>
+            </div>
+            <div class="relative">
+                <input type="password" class="border mt-2 p-4 pr-10 regular18 password">
+                <svg class="absolute visibilityicon hidden" id="visibilityicon" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.3674 6.80478C17.1724 3.33258 13.81 0.999985 10 0.999985C6.19005 0.999985 2.82765 3.33258 1.63265 6.80478C1.58925 6.93098 1.58925 7.06878 1.63265 7.19498C2.82765 10.6674 6.19005 13 10 13C13.81 13 17.1724 10.6674 18.3674 7.19518C18.4108 7.06878 18.4108 6.93118 18.3674 6.80478ZM10 11.8C6.77445 11.8 3.92325 9.87978 2.83785 6.99998C3.92325 4.12018 6.77445 2.19998 10 2.19998C13.2256 2.19998 16.0768 4.12018 17.1622 6.99998C16.0768 9.87978 13.2256 11.8 10 11.8Z" fill="#8A9CB2"/>
+                    <path d="M10.0014 3.39948C8.01617 3.39948 6.40137 5.01428 6.40137 6.99948C6.40137 8.98467 8.01617 10.5995 10.0014 10.5995C11.9866 10.5995 13.6014 8.98467 13.6014 6.99948C13.6014 5.01428 11.9866 3.39948 10.0014 3.39948ZM10.0014 9.39947C8.67797 9.39947 7.60137 8.32307 7.60137 6.99948C7.60137 5.67607 8.67797 4.59948 10.0014 4.59948C11.3248 4.59948 12.4014 5.67607 12.4014 6.99948C12.4014 8.32307 11.3248 9.39947 10.0014 9.39947Z" fill="#8A9CB2"/>
+                    </svg>
+            </div>
+        </div> <!--end div of password-->
+</div> <!--end div username and password-->
+
+<div class="flex justify-between mr-8 ml-8  pb-4 align-middle"> <!--div advance dropdown-->
+    <label for="advance settings" class="bold16advance">Advanced Settings</label>
+    <svg id="advancesettings" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.3" d="M3 9.50977L9.50976 3L16.0195 9.50977" stroke="#193B65" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+</div>
+</div><!-- end divider top-->
+
+<div class="dividerbottom">
+
+    <div class="grid grid-cols-2 p-6 pb-11 gap-2">  <!--main div of bottomcontainer-->
+        <div class="ml-2"> <!--div  SSID-->
+            <div class="">
+            <label for="SSID" class="bold16">SSID Number</label>
+            </div>
+            <div class="relative">
+            <select name="ssid" class=" border mt-2 p-2 pl-4 regular18 ">
+                <option value="1" class="regular18">1</option>
+                <option value="2" class="regular18">2</option>
+                <option value="3" class="regular18">3</option>
+            </select>
+            <svg class="absolute dropdown mt-1" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.5" d="M2 1L8.33753 7.29883L14.6751 1" stroke="#193B65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+                
+        </div> <!--end div of SSID-->
+
+        <div class="ml-2"> <!--div  Authentication-->
+            <div class="">
+            <label for="Authentication" class="bold16">Authentication</label>
+            </div>
+            <div class="relative">
+                <select name="authentication" class=" border mt-2 p-2 pl-4 regular18">
+                    <option value="WPA / WPA2">WPA / WPA2</option>
+                    <option value="WEP">WEP</option>
+                    <option value="WPA PSK">WPA PSK</option>
+                </select>
+                <svg class="absolute dropdown mt-1" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5" d="M2 1L8.33753 7.29883L14.6751 1" stroke="#193B65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+            </div>
+        </div> <!--end div of Authentication-->
+
+    <div class="ml-2 mt-3"> <!--div  Encryption-->
+        <div class="">
+        <label for="Encryption" class="bold16">Encryption Mode</label>
+        </div>
+        <div class="relative">
+        <select name="authentication" class=" border mt-2 p-2 pl-4 regular18">
+            <option value="TKIP & AES">TKIP & AES</option>
+            <option value="RSA">RSA</option>
+            <option value="DES">DES</option>
+        </select>
+        <svg class="absolute dropdown mt-1" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.5" d="M2 1L8.33753 7.29883L14.6751 1" stroke="#193B65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+            
+    </div> <!--end div of Encryption-->
+
+    <div class="ml-2 mt-3"> <!--div  WPA-->
+        <div class="">
+        <label for="WPA" class="bold16">WPA Key Interval</label>
+        </div>
+        <div class="relative">
+            <input type="text" class="border mt-2 p-4 pr-10 regular18">
+        </div>
+    </div> <!--end div of WPA-->
+
+</div> <!--end div bottomcontainer-->
+
+</div>
+
+
+    </div><!--maincontainer-->
+</div><!--End of first Div-->
+
+
+    <script src="main.js"></script>
+</body>
+</html>
